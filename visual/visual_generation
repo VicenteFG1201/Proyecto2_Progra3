@@ -1,0 +1,10 @@
+# filepath: c:\Users\vicho\OneDrive\Escritorio\P1\visual\report_generator.py
+from fpdf import FPDF
+
+def generate_pdf(clients, orders, rutas):
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+    pdf.cell(200, 10, "Reporte de Simulación", ln=True, align="C")
+    # Agrega tablas y gráficas aquí
+    pdf.output("reporte.pdf")
